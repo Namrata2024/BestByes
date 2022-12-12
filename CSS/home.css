@@ -1,0 +1,366 @@
+body {
+  background-color: #77D970;
+}
+
+/* ******************************Header Section****************************** */
+.web_name {
+  font-family: 'Prociono', serif;
+  font-weight: bold;
+}
+
+.header {
+  background-color: rgb(21, 1, 1);
+  display: flex;
+  align-items: center;
+  height: 120px;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.logo {
+  width: 100px;
+}
+
+.but {
+  margin: auto 3px;
+}
+
+.btton {
+  border-radius: 40%;
+  font-family: Georgia;
+  color: #ffff00;
+  font-size: 20px;
+  background: white;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btton:hover {
+  background: black;
+  color: black;
+  text-decoration: none;
+}
+.nav-item>a{
+  color:white;
+}
+#header-sec{
+  background-color: #eee;
+}
+#home-sec{
+  background-color: white;
+}
+/* ******************************Home Section****************************** */
+.image_container {
+  background-color: white;
+  height: 635px;
+}
+
+.mySlides {
+  padding: 10px;
+  width: 900px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ******************************feedback section****************************** */
+.feedback_container {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  background: white;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  background: #111;
+  padding: 20px 30px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container .post {
+  display: none;
+}
+
+.container .text {
+  font-size: 25px;
+  color: #666;
+  font-weight: 500;
+}
+
+.container .edit {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.container .edit:hover {
+  text-decoration: underline;
+}
+
+.container .star-widget input {
+  display: none;
+}
+
+.star-widget label {
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+
+.post-btn {
+  background-color: none;
+}
+
+input:not(:checked)~label:hover,
+input:not(:checked)~label:hover~label {
+  color: #fd4;
+}
+
+input:checked~label {
+  color: #fd4;
+}
+
+input#rate-5:checked~label {
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+
+#rate-1:checked~form header:before {
+  content: "I just hate it ";
+}
+
+#rate-2:checked~form header:before {
+  content: "I don't like it ";
+}
+
+#rate-3:checked~form header:before {
+  content: "It is awesome ";
+}
+
+#rate-4:checked~form header:before {
+  content: "I just like it ";
+}
+
+#rate-5:checked~form header:before {
+  content: "I just love it ";
+}
+
+.container form {
+  display: none;
+}
+
+input:checked~form {
+  display: block;
+}
+
+form header {
+  width: 100%;
+  font-size: 25px;
+  color: #fe7;
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+form .textarea {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
+form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #eee;
+  border: 1px solid #333;
+  background: #222;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+.button{
+  display: content;
+}
+
+/* ******************************Contact Us****************************** */
+.send {
+  text-align: center;
+}
+
+.contact-us-heading {
+  font-family: 'Luxurious Roman', cursive;
+  color: #B5CDA3;
+}
+
+.contact_container {
+  height: 650px;
+  width: 100%;
+  background-color: white;
+}
+
+#contactus {
+  position: relative;
+  top: 330px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 550px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper .title h1 {
+  color: #c5ecfd;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  display: flex;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields,
+.msg {
+  width: 48%;
+}
+
+.input-fields .input,
+.msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+
+.msg textarea {
+  height: 212px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #c5ecfd;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #c5ecfd;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #c5ecfd;
+}
+
+.btn {
+  background: #39b7dd;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .msg textarea {
+    height: 80px;
+  }
+
+  .input-fields,
+  .msg {
+    width: 100%;
+  }
+}
+
+/* ******************************About Us section****************************** */
+.aboutus_container {
+  padding: 10px;
+  background-color: white;
+}
+
+.about-us-img {
+  float: left;
+  padding-right: 10px;
+  width: 450px;
+  height: 450px;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.heads_to_change {
+  font-family: 'Luxurious Roman', cursive;
+}
+
+/* ******************************Footer Section****************************** */
+.footer {
+  background-color: white;
+  margin: 30px auto 0;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.social-icons {
+  color: white;
+  padding: 20px;
+}
+
+.social-icons:hover {
+  color: black;
+}
+
+.copyright {
+  padding: 20px auto 0;
+  font-size: 0.75rem;
+  margin-bottom: 0;
+}

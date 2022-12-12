@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading{
+    text-align: center;
+    color: rgb(5, 94, 5);
+    margin-top: 100px;
+   font-weight: bolder;
+   font-size: 50px;
+
+}
+.additem-container{
+    display :flex;
+    justify-content: center;
+    
+}
+.additems{
+    margin-left: 300px;
+    background-color: green;
+    font-weight: bolder;
+    color: white;
+    padding:10px 15px;
+margin-top: 20px;
+    border-radius: 35px;
+}
+.add-items>a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.add-items:hover{
+    padding: 15px;
+    background-color: black;
+}
+table{
+    margin: auto;
+    border: #eee solid 3px;
+    box-shadow: 10px 10px 8px #888888;
+    border-radius: 10px;
+width:70%;
+background-color: #eee;
+padding: 5px 3%;
+}
+th{
+font-weight: bold;
+
+text-align: center;
+padding: 20px 5px;
+color :green;
+font-size: 25px;
+font-weight:bolder;
+
+}
+thead{
+    border-bottom: black;
+}
+tr{
+    border: black solid 3px;
+}
+td{
+   
+    text-align: center;
+    padding:15px 5px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.today{
+    color:red;
+    font-weight: 800;
+}
+.expired{
+    color:rgb(70, 68, 68);
+    font-weight: 800;
+}
+.delete-btn{
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px;
+}
